@@ -189,11 +189,11 @@ class HomePage extends Component {
         {value => {
           const {lightTheme} = value
           return (
-            <HomeOuterCont data-testid="home">
+            <HomeOuterCont data-testid="home" lightTheme={lightTheme}>
               <Header />
               <HomeMenuCont lightTheme={lightTheme}>
                 <NavBar />
-                <HomeInnerCont lightTheme={lightTheme}>
+                <HomeInnerCont>
                   {!isBannerClose && (
                     <BannerCont data-testid="banner">
                       <BannerTopCont>

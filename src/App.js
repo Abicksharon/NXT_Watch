@@ -59,40 +59,38 @@ class App extends Component {
     const {lightTheme, activeMenu, savedItems, videoSaved} = this.state
 
     return (
-      <BrowserRouter>
-        <ThemeContext.Provider
-          value={{
-            lightTheme,
-            activeMenu,
-            changeTheme: this.changeTheme,
-            setActiveMenu: this.setActiveMenu,
-            savedItems,
-            saveVideos: this.saveVideos,
-            videoSaved,
-          }}
-        >
-          <Switch>
-            <Route exact path="/login" component={LoginPage} />
+      <ThemeContext.Provider
+        value={{
+          lightTheme,
+          activeMenu,
+          changeTheme: this.changeTheme,
+          setActiveMenu: this.setActiveMenu,
+          savedItems,
+          saveVideos: this.saveVideos,
+          videoSaved,
+        }}
+      >
+        <Switch>
+          <Route exact path="/login" component={LoginPage} />
 
-            <ProtectedRoute exact path="/" component={HomePage} />
-            <ProtectedRoute exact path="/gaming" component={GamingPage} />
+          <ProtectedRoute exact path="/" component={HomePage} />
+          <ProtectedRoute exact path="/gaming" component={GamingPage} />
 
-            <ProtectedRoute exact path="/trending" component={TrendingPage} />
-            <ProtectedRoute
-              exact
-              path="/saved-videos"
-              component={SavedVideosPage}
-            />
-            <ProtectedRoute
-              exact
-              path="/videos/:id"
-              component={VideoDetailsPage}
-            />
-            <Route exact path="/not-found" component={NotFoundPage} />
-            <Redirect to="/not-found" />
-          </Switch>
-        </ThemeContext.Provider>
-      </BrowserRouter>
+          <ProtectedRoute exact path="/trending" component={TrendingPage} />
+          <ProtectedRoute
+            exact
+            path="/saved-videos"
+            component={SavedVideosPage}
+          />
+          <ProtectedRoute
+            exact
+            path="/videos/:id"
+            component={VideoDetailsPage}
+          />
+          <Route exact path="/not-found" component={NotFoundPage} />
+          <Redirect to="/not-found" />
+        </Switch>
+      </ThemeContext.Provider>
     )
   }
 }

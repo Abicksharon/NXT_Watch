@@ -3,17 +3,15 @@ import {MdClose} from 'react-icons/md'
 import {CgPlayListAdd} from 'react-icons/cg'
 
 export const SavedVideosOuterCont = styled.div`
-height:100vh;
-width:100%;
-
+  height: 100vh;
+  width: 100%;
 `
 
 export const SavedVideosMenuCont = styled.div`
-height:90vh;
-width:100%;
-display:flex;
-background-color:${props => (props.lightTheme ? '#ffffff' : '#000000')};;
-
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  background-color: ${props => (props.lightTheme ? '#ffffff' : '#000000')}; ;
 `
 
 export const SavedVideosInnerCont = styled.div`
@@ -23,7 +21,7 @@ export const SavedVideosInnerCont = styled.div`
   flex-direction: column;
   background-color: ${props => (props.lightTheme ? '#ffffff' : '#000000')};
   overflow-y: auto;
-  flex-grow: 1; 
+  flex-grow: 1;
 `
 
 export const SavedVideosBarCont = styled.div`
@@ -32,17 +30,9 @@ export const SavedVideosBarCont = styled.div`
   display: flex;
   background-color: ${props => (props.lightTheme ? '#f1f5f9' : '#181818')};
   align-items: center;
-  flex-shrink: 0; 
-  padding: 20px 0; 
+  flex-shrink: 0;
+  padding: 20px 0;
   box-sizing: border-box;
-
-& h1{
-  font-size:20px;
-color:${props => (props.lightTheme ? '#606060' : '#cccccc')};
- margin: 0px 0px 0px 20px;
-}
-
-
 `
 
 export const SavedVideosIconCont = styled.div`
@@ -54,14 +44,14 @@ export const SavedVideosIconCont = styled.div`
   align-items: center;
   background-color: ${props => (props.lightTheme ? '#d7dfe9' : '#000000')};
   border-radius: 30px;
-  flex-shrink: 0; 
-  padding-top:2px;
+  flex-shrink: 0;
+  padding-top: 2px;
 `
 
 export const SavedVideosText = styled.h1`
-font-size:20px;
-color:${props => (props.lightTheme ? '#606060' : '#cccccc')};
- margin: 0px 0px 0px 20px;
+  font-size: 20px;
+  color: ${props => (props.lightTheme ? '#606060' : '#cccccc')};
+  margin: 0px 0px 0px 20px;
 `
 
 export const SavedVideosIcon = styled(CgPlayListAdd)`
@@ -70,51 +60,43 @@ export const SavedVideosIcon = styled(CgPlayListAdd)`
   display: flex;
   justify-content: center;
   align-items: center;
-  
 `
 
 export const VideosCont = styled.ul`
- 
-  width: calc(100% - 40px); 
-  margin:15px 0px 0px 40px;
+  width: calc(100% - 40px);
+  margin: 15px 0px 0px 40px;
   padding: 0px;
   display: flex;
   flex-direction: column;
-  
+
   color: ${props => (props.lightTheme ? '#424242' : 'transparent')};
   box-sizing: border-box;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 `
 
 export const NoSavedVideosImgCont = styled.div`
- 
   height: 100%;
-  width: 90%; 
+  width: 90%;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 
-   justify-content: center;
+  justify-content: center;
   align-items: center;
-
 `
 
 export const NoSavedVideosImg = styled.img`
- margin:50px 0px 10px 0px;
+  margin: 50px 0px 10px 0px;
   height: 150px;
-
 `
 export const NoSavedVideosText = styled.h1`
-font-size:16px;
-margin:5px 0px 8px 0px;
- color: ${props => (props.lightTheme ? ' #1e293b' : '#d7dfe9')};
-  
+  font-size: 16px;
+  margin: 5px 0px 8px 0px;
+  color: ${props => (props.lightTheme ? ' #1e293b' : '#d7dfe9')};
 `
 
 export const NoSavedVideosTextPara = styled.p`
-font-size:14px;
- color: ${props => (props.lightTheme ? ' #606060' : '#d7dfe9')};
-   font-weight: 500;
-margin:5px 0px 8px 0px;
-
-  
+  font-size: 14px;
+  color: ${props => (props.lightTheme ? ' #606060' : '#d7dfe9')};
+  font-weight: 500;
+  margin: 5px 0px 8px 0px;
 `

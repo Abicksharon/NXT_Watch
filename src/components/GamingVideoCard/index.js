@@ -21,7 +21,7 @@ const GamingVideoCard = props => {
         return (
           <ListCont>
             <VideoCardCont to={`videos/${id}`}>
-              <VideoThumbNail src={thumbnailUrl} alt="video thumbnail"/>
+              <VideoThumbNail src={thumbnailUrl} alt="video thumbnail" />
 
               <CardDetailsInnerCont>
                 <CardTitle lightTheme={lightTheme}>{title}</CardTitle>

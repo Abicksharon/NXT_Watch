@@ -18,8 +18,6 @@ import {
   NoSavedVideosTextPara,
 } from './styledComponent'
 
-import {TrendingText} from '../TrendingPage/styledComponent'
-
 import ThemeContext from '../../context/ThemeContext'
 
 const SavedVideosPage = () => (
@@ -28,7 +26,7 @@ const SavedVideosPage = () => (
       {value => {
         const {lightTheme, savedItems} = value
         return (
-          <SavedVideosOuterCont data-testid="savedVideos">
+          <SavedVideosOuterCont>
             <Header />
             <SavedVideosMenuCont lightTheme={lightTheme}>
               <NavBar />
@@ -39,9 +37,12 @@ const SavedVideosPage = () => (
                       <SavedVideosIconCont lightTheme={lightTheme}>
                         <SavedVideosIcon lightTheme={lightTheme} />
                       </SavedVideosIconCont>
-                      <TrendingText lightTheme={lightTheme}>
+                      <SavedVideosText
+                        lightTheme={lightTheme}
+                        data-testid="savedVideos"
+                      >
                         Saved Videos
-                      </TrendingText>
+                      </SavedVideosText>
                     </SavedVideosBarCont>
 
                     {savedItems.map(each => (

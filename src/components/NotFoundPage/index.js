@@ -35,7 +35,7 @@ class NotFoundRoute extends Component {
                 <NavBar />
                 <HomeInnerCont lightTheme={lightTheme}>
                   <NotFoundCont>
-                    <NotFoundImage src={notFoundImageUrl} alt='not found' />
+                    <NotFoundImage src={notFoundImageUrl} alt="not found" />
                     <NotFoundHead lightTheme={lightTheme}>
                       Page Not Found
                     </NotFoundHead>
