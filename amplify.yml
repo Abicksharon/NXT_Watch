@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm install
         - npx browserslist@latest --update-db
     build:
       commands:
@@ -15,3 +15,4 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+
