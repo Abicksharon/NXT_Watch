@@ -206,7 +206,10 @@ class VideoDetailsPage extends Component {
                 <HorrizontalLine />
 
                 <CardDetailsOuterCont>
-                  <VideoProfile src={channel.profileImageUrl} alt="channel logo"/>
+                  <VideoProfile
+                    src={channel.profileImageUrl}
+                    alt="channel logo"
+                  />
                   <CardDetailsInnerCont>
                     <CardName lightTheme={lightTheme}>{channel.name}</CardName>
                     <CardSubscriberCount lightTheme={lightTheme}>

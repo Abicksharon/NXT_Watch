@@ -9,7 +9,7 @@
   align-items: flex-start;
   font-weight: 400;
   border: solid red 1px;
-  border-radius:;
+  border-radius: ;
 
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
 
@@ -21,11 +21,11 @@
 
   flex-wrap: wrap;
 
-  height:;
+  height: ;
 
   text-decoration: none;
 
-  margin:;
-  padding:;
+  margin: ;
+  padding: ;
   background-color: transparent;
 }

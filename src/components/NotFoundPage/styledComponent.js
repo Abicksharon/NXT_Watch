@@ -1,20 +1,19 @@
 import styled from 'styled-components'
 
 export const HomeInnerCont = styled.div`
-height:80vh;
-width:83%;
+  height: 80vh;
+  width: 83%;
 
-  background-color:${props => (props.lightTheme ? '#f4f4f4' : '#000000')}; 
-     
+  background-color: ${props => (props.lightTheme ? '#f4f4f4' : '#000000')};
 `
 export const NotFoundCont = styled.div`
-height:70vh;
-width:80%;
-display:flex;
+  height: 70vh;
+  width: 80%;
+  display: flex;
   flex-direction: column;
-  background-color:transparent; 
-     justify-content: center;
-  align-items: center;  
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
 `
 
 export const NotFoundImage = styled.img`

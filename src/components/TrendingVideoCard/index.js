@@ -15,8 +15,14 @@ import ThemeContext from '../../context/ThemeContext'
 
 const TrendingVideoCard = props => {
   const {videoDetails} = props
-  const {id, title, channel, publishedAt, thumbnailUrl, viewCount} =
-    videoDetails
+  const {
+    id,
+    title,
+    channel,
+    publishedAt,
+    thumbnailUrl,
+    viewCount,
+  } = videoDetails
 
   const totalDays = formatDistanceToNowStrict(new Date(publishedAt))
 
